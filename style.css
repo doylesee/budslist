@@ -1,0 +1,2260 @@
+/*
+Theme Name: The A Theme
+Version: 1.0
+Author: Doyle See
+Author URI: http://doylesee.com
+*/
+
+/* Temporary Menu styles */
+#temporary-menu {
+	background: #000;
+	min-height: 36px;
+	opacity: 0.8;
+	padding: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 180px;
+	z-index: 99999;
+	text-align: right;
+}
+#temporary-menu > a {
+	position: absolute;
+	right: 10px;
+}
+#temporary-menu span {
+	background: #fff;
+	display: block;
+	height: 4px;
+	margin: 0 0 2px 0;
+	width: 20px;
+}
+#temporary-menu ul { margin: 26px 0 0 0; }
+#temporary-menu ul li { list-style: none; }
+#temporary-menu ul li a,
+#temporary-menu ul li a:link,
+#temporary-menu ul li a:visited,
+#temporary-menu ul li a:hover
+#temporary-menu ul li a:active {
+	color: #fff;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+a,
+a:hover {
+	color: #63bb00;
+}
+
+/* General styles */
+.row {
+	max-width: 1140px;
+}
+.page {
+	background: #efefef;
+	padding: 47px 0 92px 0;
+}
+.page h1 {
+	color: #0076a3;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 35px 0;
+}
+.category h2 {
+	color: #fff !important;
+	font-size: 12px !important;
+	line-height: 12px !important;
+	margin: 0 !important;
+	padding: 12px 14px 11px 14px !important;
+	text-transform: uppercase !important;
+}
+.category--research-and-development h2 {
+	background: #00bff3;
+}
+.category--science-behind-cannabis h2 {
+	background: #63bb00;
+}
+.category--health h2 {
+	background: #ed1c24;
+}
+.category--lifestyle h2 {
+	background: #f26522;
+}
+.category--cannabis-and-politics h2 {
+	background: #0072bc;
+}
+.category--around-the-world h2 {
+	background: #a3620a;
+}
+
+/* News Listing page */
+/* News Listing page: Banner section*/
+.banner {
+	margin-bottom: 52px;
+}
+.banner__list {
+	position: relative;
+}
+.banner__item {
+	position: relative;
+}
+.banner__item-caption {
+	display: none;
+}
+.banner__item-caption p {
+	color: #fff;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0;
+}
+.banner__list .slick-arrow {
+	background: rgba(255,255,255,0.5) no-repeat center center;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-indent: -99999px;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	width: 44px;
+	z-index: 10;
+}
+.banner__list .slick-prev {
+	background-image: url('img/banner__list-nav--prev.png');
+	left: 15px;
+}
+.banner__list .slick-next {
+	background-image: url('img/banner__list-nav--next.png');
+	right: 15px;
+}
+/* News Listing page: News Listing section */
+.news-listing {
+	border-bottom: 1px solid #e1e1e1;
+	margin: 0 0 21px 0;
+	padding: 0 0 22px 0;
+}
+.news-listing__item {
+	margin: 0 0 22px 0;
+}
+.news-listing__item-content {
+	background: #fff;
+	padding: 4% 3.5%;
+}
+.news-listing__item-image {
+	margin: 0 0 3% 0;
+	text-align: center;
+	width: 100%;
+}
+.news-listing__item-copy {
+	width: 100%;
+}
+.news-listing__item-copy h3 {
+	color: #111;
+	font-size: 22px;
+	line-height: 28px;
+	margin: -6px 0 4px 0;
+}
+.news-listing__item-details {
+	color: #898989;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 0 18px 0;
+}
+.news-listing__item-copy .news-listing__item-details a {
+	background: none;
+	float: none;
+	font-weight: 700;
+	padding: 0;
+	text-transform: none;
+}
+.news-listing__item-copy p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 17px 0;
+}
+.news-listing__item-copy a {
+	background: url('img/news-listing__item-copy-a-bg.png') no-repeat right center;
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0 23px 0 0;
+	text-transform: uppercase;
+}
+.news-listing__item-copy a:hover {
+	text-decoration: underline;
+}
+.news-listing__nav {
+	margin: 0 0 40px 0;
+}
+.news-listing__nav a {
+	border: 1px solid #63bb00;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.news-listing__nav--newer-posts {
+	background: url('img/news-listing__nav--newer-posts-bg.png') no-repeat left center;
+	float: left;
+	padding: 7px 8px 6px 25px;
+}
+.news-listing__nav--older-posts {
+	background: url('img/news-listing__nav--older-posts-bg.png') no-repeat right center;
+	float: right;
+	padding: 7px 25px 6px 8px;
+}
+/* News Listing page: Sidebar section */
+.news-listing__sidebar h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0;
+}
+/* News Listing page: Sidebar Category section */
+.news-listing__sidebar-category {
+	margin: 0 auto 76px auto;
+	max-width: 265px
+}
+.news-listing__sidebar-category h2 {
+	margin: 0 0 13px 0;
+}
+.news-listing__sidebar-category ul {
+	margin: 0;
+	padding: 0;
+}
+.news-listing__sidebar-category ul li {
+	line-height: 18px;
+	list-style: none;
+	margin: 0 0 9px 0;
+}
+.news-listing__sidebar-category ul li span {
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	display: inline-block;
+	height: 18px;
+	margin: 0 11px 0 0;
+	vertical-align: middle;
+	width: 18px;
+}
+.news-listing__sidebar-category ul li.category--research-and-development span {
+	background: #00bff3;
+}
+.news-listing__sidebar-category ul li.category--science-behind-cannabis span {
+	background: #63bb00;
+}
+.news-listing__sidebar-category ul li.category--health span {
+	background: #ed1c24;
+}
+.news-listing__sidebar-category ul li.category--lifestyle span {
+	background: #f26522;
+}
+.news-listing__sidebar-category ul li.category--cannabis-and-politics span {
+	background: #0072bc;
+}
+.news-listing__sidebar-category ul li.category--around-the-world span {
+	background: #a3620a;
+}
+.news-listing__sidebar-category ul li.category--historical-timeline span {
+	background: #ffc200;
+}
+.news-listing__sidebar-category ul li a {
+	color: #000;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0;
+	vertical-align: middle;
+}
+.news-listing__sidebar-category ul li.category--research-and-development a:hover {
+	color: #00bff3;
+}
+.news-listing__sidebar-category ul li.category--science-behind-cannabis a:hover {
+	color: #63bb00;
+}
+.news-listing__sidebar-category ul li.category--health a:hover {
+	color: #ed1c24;
+}
+.news-listing__sidebar-category ul li.category--lifestyle a:hover {
+	color: #f26522;
+}
+.news-listing__sidebar-category ul li.category--cannabis-and-politics a:hover {
+	color: #0072bc;
+}
+.news-listing__sidebar-category ul li.category--around-the-world a:hover {
+	color: #a3620a;
+}
+.news-listing__sidebar-category ul li.category--historical-timeline a:hover {
+	color: #ffc200;
+}
+/* News Listing page: Sidebar Popular Posts section */
+.news-listing__sidebar-popular-posts {
+	margin: 0 auto 66px auto;
+	max-width: 265px;
+}
+.news-listing__sidebar-popular-posts h2 {
+	margin: 0 0 25px 0;
+}
+.news-listing__sidebar-popular-posts-item {
+	margin: 0 0 26px 0;
+}
+.news-listing__sidebar-popular-posts-item-image {
+	float: left;
+	margin: 0 7% 0 0;
+	width: 28%;
+}
+.news-listing__sidebar-popular-posts-item-copy {
+	float: left;
+	width: 65%;
+}
+.news-listing__sidebar .category h3 {
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0 0 3px 0;
+	text-transform: uppercase;
+}
+.news-listing__sidebar .category--research-and-development h3 {
+	color: #00bff3;
+}
+.news-listing__sidebar .category--science-behind-cannabis h3 {
+	color: #63bb00;
+}
+.news-listing__sidebar .category--health h3 {
+	color: #ed1c24;
+}
+.news-listing__sidebar .category--lifestyle h3 {
+	color: #f26522;
+}
+.news-listing__sidebar .category--cannabis-and-politics h3 {
+	color: #0072bc;
+}
+.news-listing__sidebar .category--around-the-world h3 {
+	color: #a3620a;
+}
+.news-listing__sidebar-popular-posts-item-copy p {
+	color: #111;
+	font-size: 16px;
+	line-height: 19px;
+	margin: 0;
+}
+/* News Listing page: Sidebar Social section */
+.news-listing__sidebar-social {
+	background: #000;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin: 0 auto;
+	max-width: 265px;
+	position: relative;
+}
+.news-listing__sidebar-social img {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	height: 100%;
+	opacity: 0.5;
+	width: 100%;
+}
+.news-listing__sidebar-social-copy {
+	padding: 30px 16px 26px 16px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+}
+.news-listing__sidebar-social h2 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0 0 190px 0;
+}
+.news-listing__sidebar-social-copy a {
+	background: #63bb00;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+	padding: 16px;
+	text-transform: uppercase;
+}
+.news-listing__sidebar-social-copy a:hover {
+	background: #78e300;
+}
+
+/* News Details page */
+.news-details {
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+}
+.news-details h2 {
+	margin: 0 0 23px 0 !important;
+}
+.news-details h1 {
+	color: #111;
+	font-size: 30px;
+	line-height: 36px;
+	margin: 0 0 10px 0;
+	padding: 0 26px;
+}
+.news-details .news-listing__item-details {
+	margin: 0 0 38px 0;
+	padding: 0 26px;
+}
+.news-details img {
+	margin: 0 0 41px 0;
+}
+.news-details p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 22px 0;
+	padding: 0 26px;
+}
+.news-details ul {
+	padding: 0 26px;
+}
+/* News Details page: Social Media Share section */
+.news-details__social-media {
+	background: #fff;
+	margin: 0 0 12px 0;
+	padding: 25px 26px;
+}
+.news-details__social-media a {
+	color: #acacac;
+	display: inline-block;
+	font-size: 10px;
+	line-height: 14px;
+	margin: 0 12px 12px 0;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+a.news-details__social-media--like {
+	background: url('img/news-details__social-media--like-bg.png') no-repeat left top;
+	padding: 0 0 0 22px;
+}
+a.news-details__social-media--comment {
+	background: url('img/news-details__social-media--comment-bg.png') no-repeat left top;
+	padding: 0 0 0 22px;
+}
+a.news-details__social-media--share {
+	background: url('img/news-details__social-media--share-bg.png') no-repeat left top;
+	padding: 0 0 0 17px;
+}
+.news-details__social-media-sharethis {
+	float: left;
+}
+.news-details__social-media-sharethis span {
+	display: inline-block;
+	float: left;
+	margin: 0 0 12px 0;
+	height: 24px !important;
+}
+.news-details__social-media-sharethis > span {
+	margin: 0 0 0 6px;
+}
+/* News Details page: Discussions section */
+.news-details__discussion {
+	background: #fff;
+	margin: 0 0 50px 0;
+	padding: 3% 2.5%;
+}
+.news-details__discussion-icon {
+	float: left;
+	margin: 0 1.5% 0 0;
+	width: 8.5%;
+}
+.news-details__discussion-form {
+	float: left;
+	width: 90%;
+}
+.news-details__discussion-form textarea {
+	background: #f7f7f7;
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #c2c2c2;
+	height: 59px;
+	margin: 0;
+	resize: none;
+	width: 100%;
+}
+.news-details__discussion-form input[type="submit"] {
+	display: none;
+	margin: 0;
+}
+/* News Details page: More Related Articles section */
+.news-details__more-related-articles {
+	border-bottom: 1px solid #e1e1e1;
+	margin: 0 0 21px 0;
+	padding: 0 0 46px 0;
+}
+.news-details__more-related-articles h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 36px 0;
+}
+.news-details__more-related-articles-item {
+	margin: 0 0 20px 0;
+}
+.news-details__more-related-articles-item h2,
+.news-details__more-related-articles-item a,
+.news-details__more-related-articles-item img,
+.news-details__more-related-articles-item h3 {
+	display: block;
+	margin: 0 auto !important;
+	max-width: 246px !important;
+}
+.news-details__more-related-articles-item img {
+	margin: 0 0 18px 0 !important;
+	width: 100%;
+}
+.news-details__more-related-articles-item h3 {
+	color: #111;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+/* Dispensaries Listing page */
+/* Dispensaries Listing page: Banner / Search section */
+.search {
+	height: 560px;
+	position: relative;
+}
+.search__map iframe {
+	margin-bottom: -6px;
+	max-width: 100%;
+	min-height: 100%;
+}
+.search__form {
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	padding: 220px 0 0 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.search__form h2 {
+	color: #fefefe;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 19px 0;
+	text-align: center;
+}
+.search__form form {
+	margin: 0 auto;
+	max-width: 446px;
+	position: relative;
+	width: 100%;
+}
+.search__form form input[type="text"] {
+	background: #fff;
+	border: 2px solid #111;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #898989;
+	font-size: 22px;
+	line-height: 56px;
+	height: 56px;
+	padding: 0 64px 0 18px;
+}
+.search__form input[type="submit"] {
+	background: url('img/search__form-submit-bg.png') no-repeat center center transparent;
+	border: medium none;
+	height: 56px;
+	position: absolute;
+	right: 0;
+	text-indent: -99999px;
+	top: 0;
+	width: 56px;
+}
+/* Dispensaries Listing page: Options section */
+.dispensaries-listing__main-options {
+	margin: 0 0 32px 0;
+}
+.dispensaries-listing__main-options-display {
+	width: 100%
+}
+.dispensaries-listing__main-options-display a {
+	border: 1px solid #d7d7d7;
+	color: #898989;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	padding: 6px 18px 6px 34px;
+	text-transform: uppercase;
+}
+a.dispensaries-listing__main-options-list {
+	background: url('img/dispensaries-listing__main-options-list-bg.png') no-repeat 15px center #fff;
+	border-radius: 2px 0 0 2px;
+	-moz-border-radius: 2px 0 0 2px;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-right: medium none;
+}
+a.dispensaries-listing__main-options-map {
+	background: url('img/dispensaries-listing__main-options-map-bg.png') no-repeat 18px center #fff;
+	border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	-webkit-border-radius: 0 2px 2px 0;
+}
+.dispensaries-listing__main-options-display a:hover,
+.dispensaries-listing__main-options-display a.active {
+	background-color: #e1e1e1;
+	box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+}
+.dispensaries-listing__main-options-display span {
+	color: #898989;
+	display: block;
+	font-size: 12px;
+	line-height: 28px;
+	margin: 0;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.dispensaries-listing__main-options-region {
+	width: 100%;
+}
+.dispensaries-listing__main-options-region select {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #898989;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+/* Dispensaries Listing page: Dispensaries List section */
+.dispensaries-listing__item {
+	background: #fff;
+	margin: 0 0 22px 0;
+	padding: 37px 30px 40px 38px;
+}
+.dispensaries-listing__item-image {
+	margin: 0 auto;
+	max-width: 169px;
+	text-align: center;
+}
+.dispensaries-listing__item-image img {
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	width: 100%;
+}
+.dispensaries-listing__item-copy {
+	width: 100%;
+}
+.dispensaries-listing__item-distance {
+	color: #898989;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 0 9px 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+.dispensaries-listing__item-copy h2 {
+	color: #111;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 13px 0;
+}
+.dispensaries-listing__item-reviews {
+	color: #898989;
+	font-size: 16px;
+	line-height: 17px;
+	margin: 0 0 30px 0;
+}
+.dispensaries-listing__item-reviews span {
+	background: url('img/dispensaries-listing__item-reviews.png') no-repeat transparent;
+	display: inline-block;
+	height: 17px;
+	width: 110px;
+}
+span.dispensaries-listing__item-reviews--1 {
+	background-position: 0 -17px;
+}
+span.dispensaries-listing__item-reviews--2 {
+	background-position: 0 -34px;
+}
+span.dispensaries-listing__item-reviews--3 {
+	background-position: 0 -51px;
+}
+span.dispensaries-listing__item-reviews--4 {
+	background-position: 0 -68px;
+}
+span.dispensaries-listing__item-reviews--5 {
+	background-position: 0 -85px;
+}
+.dispensaries-listing__item-info {
+	margin: 0 0 29px 0;
+}
+.dispensaries-listing__item-info span {
+	color: #898989;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 34px 0 0;
+	padding: 0 0 0 28px;
+	vertical-align: top;
+}
+span.dispensaries-listing__item-info-address {
+	background: url('img/dispensaries-listing__item-info-address-bg.png') no-repeat left 3px transparent;
+}
+span.dispensaries-listing__item-info-hours {
+	background: url('img/dispensaries-listing__item-info-hours-bg.png') no-repeat left 3px transparent;
+}
+span.dispensaries-listing__item-info-email {
+	background: url('img/dispensaries-listing__item-info-email-bg.png') no-repeat left 5px transparent;
+}
+span.dispensaries-listing__item-info-phone {
+	background: url('img/dispensaries-listing__item-info-phone-bg.png') no-repeat left 6px transparent;
+}
+.dispensaries-listing__item-info span strong {
+	color: #000;
+	font-weight: 400;
+}
+.dispensaries-listing__item-features img {
+	margin: 0 16px 0 0;
+}
+/* Dispensaries Listing page: Sidebar section */
+a.dispensaries-listing__sidebar-change-location {
+	border: 1px solid #63bb00;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline-block;
+	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	margin: 0 0 31px 0;
+	max-width: 169px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.dispensaries-listing__sidebar-filter h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 15px 0;
+}
+.dispensaries-listing__sidebar-filter-item {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 20px 0 18px 0;
+}
+.dispensaries-listing__sidebar-filter-item:nth-of-type(1) {
+	border-top: 1px solid #e1e1e1;
+}
+.dispensaries-listing__sidebar-filter-item h3 {
+	background: url('img/dispensaries-listing__sidebar-filter-h3-bg.png') no-repeat right top transparent;
+	color: #111;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+}
+.dispensaries-listing__sidebar-filter-item form {
+	display: none;
+	margin: 13px 0 0 0;
+}
+.dispensaries-listing__sidebar-filter-item form input[type="radio"] {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 0;
+	vertical-align: middle;
+}
+.dispensaries-listing__sidebar-filter-item form label {
+	color: #898989;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+/* Dispensaries Details page */
+/* Dispensaries Details page: Map section */
+.map {
+	height: 368px;
+}
+.map iframe {
+	margin-bottom: -6px;
+	max-width: 100%;
+	min-height: 100%;
+}
+.map .scrolloff {
+	pointer-events: none;
+}
+/* Dispensaries Details page: Heading section */
+.heading--dispensaries-details {
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+	min-height: 244px;
+	padding: 32px 0 0 0;
+}
+.heading__image {
+	text-align: center;
+	top: -96px;
+}
+.heading__image img {
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	margin: 0 0 24px 0;
+}
+.heading__image a {
+	background: url('img/heading__image-a-bg.png') no-repeat 31% center #63bb00;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	height: 27px;
+	line-height: 27px;
+	margin: 0 auto;
+	max-width: 190px;
+	padding: 0 0 0 4%;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.heading__info {
+	margin: 0 0 20px 0;
+}
+.heading__info h1 {
+	color: #0076a3;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 15px;
+}
+.heading__info .dispensaries-listing__item-reviews {
+	margin: 0 0 15px 0;
+}
+.heading__social-media .news-details__social-media-sharethis {
+	margin: 0 0 44px 0;
+}
+.heading__social-media .dispensaries-listing__item-info {
+	margin: 0 0 20px 0;
+}
+/* Dispensaries Details page: Content section */
+.dispensaries-details__main ul.tabs {
+	background: #63bb00;
+	padding: 0;
+}
+.dispensaries-details__main ul.tabs li a {
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 13px 14px 11px 14px;
+	text-transform: uppercase;
+}
+.dispensaries-details__main ul.tabs li a:hover,
+.dispensaries-details__main ul.tabs li.active a {
+	background: url('img/dispensaries-details__main-ul-tabs-li-active-bg.png') no-repeat center bottom transparent;
+	color: #fff;
+}
+.dispensaries-details__main .tabs-content .content {
+	background: #fff;
+	padding: 0;
+}
+.dispensaries-details__menu-item h2 {
+	background: url('img/dispensaries-listing__sidebar-filter-h3-bg.png') no-repeat 94% center #fff;
+	color: #63bb00;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0;
+	padding: 30px 30px 26px 30px;
+}
+.dispensaries-details__menu-item table {
+	background: #e1e1e1;
+	border: medium none;
+	border-collapse: collapse;
+	display: none;
+	margin: 0;
+	width: 100%;
+}
+.dispensaries-details__menu-item tr {
+	border-bottom: 1px solid #e1e1e1 !important;
+}
+.dispensaries-details__menu-item th,
+.dispensaries-details__menu-item td {
+	background: #e8e8e8;
+	font-size: 16px;
+	line-height: 16px;
+}
+.dispensaries-details__menu-item th {
+	color: #898989;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 11px 1%;
+	text-transform: uppercase;
+}
+.dispensaries-details__menu-item td:nth-of-type(1) {
+	color: #0076a3;
+	padding: 1% 3% 2% 3%;
+	width: 26%;
+}
+.dispensaries-details__menu-item td:nth-of-type(2) {
+	width: 23%;
+}
+.dispensaries-details__menu-item td:nth-of-type(3) {
+	
+	width: 10%;
+}
+.dispensaries-details__menu-item td:nth-of-type(4) {
+	width: 9%;
+}
+.dispensaries-details__menu-item td:nth-of-type(5) {
+	width: 11%;
+}
+.dispensaries-details__menu-item td:nth-of-type(6) {
+	width: 10%;
+}
+.dispensaries-details__menu-item td:nth-of-type(7) {
+	padding: 1% 3% 2% 1%;
+	width: 11%;
+}
+.dispensaries-details__menu-item .dispensaries-listing__item-reviews {
+	margin: 0;
+}
+.dispensaries-details__menu-item-content {
+	padding: 30px 30px 26px 30px;
+}
+/* Dispensaries Details page: Sidebar section */
+.dispensaries-details__sidebar-daily-updates {
+	background: #fff;
+	margin: 0 0 45px 0;
+	padding: 0 0 11px 0;
+}
+.dispensaries-details__sidebar-daily-updates h2 {
+	background: #00bff3;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 0 10px 0;
+	padding: 12px 15px 11px 15px;
+	text-transform: uppercase;
+}
+.dispensaries-details__sidebar-daily-updates  p,
+.dispensaries-details__sidebar-daily-updates  ul {
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 15px;
+}
+.dispensaries-details__sidebar-about {
+	background: #fff;
+	padding: 25px 26px 11px 26px;
+}
+.dispensaries-details__sidebar-about h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 24px;
+}
+.dispensaries-details__sidebar-about span {
+	display: block;
+	margin: 0 0 14px 0;
+	word-wrap: break-word;
+}
+a.dispensaries-details__sidebar-request-delivery {
+	background: url('img/dispensaries-details__sidebar-request-delivery-bg.png') no-repeat 23% center transparent;
+	border: 1px solid #63bb00;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #63bb00;
+	display: block;
+	font-size: 12px;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 auto;
+	max-width: 265px;
+	padding: 0 0 0 4%;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/* Strains page */
+/* Strains page: Banner section */
+.banner--strains {
+	background: url('img/banner--strains-bg.jpg') repeat-x center top #efefef;
+	padding: 73px 0 0 0;
+	text-align: center;
+}
+.banner--strains h1 {
+	color: #fff;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 43px 0;
+}
+.strains__main {
+	margin: 0 0 20px 0;
+}
+/* Strains page: Options section */
+.strains__main-options {
+	margin: 0 0 18px 0;
+}
+.strains__main-options-count {
+	color: #898989;
+	font-size: 12px;
+	line-height: 28px;
+	margin: 0 2% 0 0;
+	text-transform: uppercase;
+	width: 100%;
+}
+.strains__main-options-sort {
+	margin: 0 2% 10px 0;
+	width: 100%;
+}
+.strains__main-options-sort select {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #898989;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.strains__main-options-search {
+	width: 100%;
+}
+.strains__main-options-search form {
+	position: relative;
+}
+.strains__main-options-search input[type="text"] {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #898989;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0 34px 0 11px;
+	text-transform: uppercase;
+}
+.strains__main-options-search input[type="submit"] {
+	background: url('img/strains__main-options-search-submit-bg.png') no-repeat center center transparent;
+	border: medium none;
+	height: 28px;
+	position: absolute;
+	right: 0;
+	text-indent: -99999px;
+	top: 0;
+	width: 34px;
+}
+/* Strains page: Strains list section */
+.strains {
+	background: #fff;
+	padding-top: 40px;
+}
+.strains__item {
+	margin: 0 0 25px 0;
+	text-align: center;
+}
+.strains__item-inner {
+	border-radius: 100%;
+	height: 171px;
+	margin: 0 auto 18px auto;
+	padding: 26px;
+	text-align: center;
+	width: 171px;
+}
+.strains__item.sativa .strains__item-inner {
+	background: #63bb00;
+}
+.strains__item.hybrid .strains__item-inner {
+	background: url('img/strains__item-hybrid-bg.jpg') repeat-x;
+}
+.strains__item.indica .strains__item-inner {
+	background: #00bff3;
+}
+.strains__item-type {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+	margin: 0 0 2px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.strains__item.sativa .strains__item-type {
+	color: #406618;
+}
+.strains__item.hybrid .strains__item-type {
+	color: #790000;
+}
+.strains__item.indica .strains__item-type {
+	color: #0072bc;
+}
+.strains__item h2 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0 0 4px 0;
+}
+.strains__item h3 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
+	margin: 0;
+}
+
+/* Strains Details page */
+.banner--strains-details {
+	background-color: #fff;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 28px 0;
+}
+.banner__breadcrumbs,
+.banner__social-media {
+	margin: 0 0 18px 0;
+}
+.banner__breadcrumbs ul {
+	margin: 0;
+}
+.banner__breadcrumbs ul li {
+	border-left: 1px solid #3f3f3f;
+	color: #898989;
+	float: left;
+	font-size: 11px;
+	line-height: 11px;
+	list-style: none;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+.banner__breadcrumbs ul li:first-child {
+	border: medium none;
+}
+.banner__breadcrumbs ul li a {
+	color: #464646;
+	font-size: 11px;
+	line-height: 11px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.banner__social-media .heading__social-share {
+	float: right;
+}
+.banner__social-media .heading__social-share a {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0;
+	text-indent: -99999px;
+	width: auto;
+}
+.banner__social-media .heading__social-share a.heading__social-share--facebook {
+	background: url('img/heading__social-share--facebook.png') no-repeat transparent;
+	width: 8px;
+}
+.banner__social-media .heading__social-share a.heading__social-share--google-plus {
+	background: url('img/heading__social-share--google-plus.png') no-repeat transparent;
+	width: 20px;
+}
+.banner__social-media .heading__social-share a.heading__social-share--twitter {
+	background: url('img/heading__social-share--twitter.png') no-repeat transparent;
+	width: 16px;
+}
+.banner__social-media .heading__social-share a.heading__social-share--linkedin {
+	background: url('img/heading__social-share--linkedin.png') no-repeat transparent;
+	width: 16px;
+}
+.banner__social-media .heading__social-share a.heading__social-share--share {
+	background: url('img/heading__social-share--share.png') no-repeat transparent;
+	width: 19px;
+}
+.banner--strains-details h1 {
+	margin: 0 0 18px 0;
+}
+.banner--strains-details .dispensaries-listing__item-reviews {
+	color: #fff;
+	margin: 0 0 34px 0;
+}
+.banner--strains-details .dispensaries-listing__item-reviews span {
+	display: inline-block;
+	margin: 0 0 10px 0;
+}
+.banner--strains-details .strains__item {
+	margin: 0 auto 7px auto;
+}
+a.banner__request-this-strain {
+	background: #63bb00;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 auto 10px auto;
+	max-width: 190px;
+	min-height: 24px;
+	padding: 8px;
+	text-transform: uppercase;
+	width: 100%;
+}
+a.banner__add-to-favorites,
+a.banner__share {
+	color: #acacac;
+	display: inline-block;
+	font-size: 10px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0 0 0 18px;
+	text-transform: uppercase;
+}
+a.banner__add-to-favorites {
+	background: url('img/banner--strains-details__add-to-favorites-bg.png') no-repeat left center;
+	margin: 0 24px 0 0;
+}
+a.banner__share {
+	background: url('img/banner--strains-details__share-bg.png') no-repeat left center;
+}
+.strains--details.dispensaries-details__main {
+	padding: 0;
+}
+.strains--details ul.tabs {
+	text-align: center;
+}
+.strains--details ul.tabs li.tab-title {
+	display: inline-block;
+	float: none;
+	margin: 0 9px;
+}
+.strains--details ul.tabs li.tab-title a.strains--details__tab--overview {
+	background: url('img/strains--details__tab--overview.png') no-repeat left center;
+}
+.strains--details ul.tabs li.tab-title a.strains--details__tab--availability {
+	background: url('img/strains--details__tab--availability.png') no-repeat left center;
+}
+.strains--details ul.tabs li.tab-title a.strains--details__tab--photos {
+	background: url('img/strains--details__tab--photos.png') no-repeat left center;
+}
+.strains--details ul.tabs li:hover,
+.strains--details ul.tabs li.active {
+	background: url('img/dispensaries-details__main-ul-tabs-li-active-bg.png') no-repeat center bottom transparent !important;
+}
+.strains--details h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+.strains--details p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+}
+.strains--details__overview {
+	padding: 0;
+}
+.strains-details__strain-overview {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 33px 28px 10px 28px;
+}
+.strains-details__strain-attributes {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 28px 74px 0 74px;
+}
+.strains-details__strain-attributes ul.tabs {
+	background: #fff;
+	border-bottom: 1px solid #e1e1e1;
+}
+.strains-details__strain-attributes ul.tabs li a {
+	color: #63bb00;
+}
+.strains-details__strain-attributes ul.tabs li a:hover,
+.strains-details__strain-attributes ul.tabs li.active a {
+	background: url('img/strains-details__strain-attributes-ul-tabs-li-active-a-bg.png') no-repeat center bottom;
+	color: #000;
+}
+.strains-details__strain-attributes .dispensaries-details__menu-item-content {
+	padding: 40px 0 58px 0;
+}
+.benefits {
+	text-align: center;
+}
+.benefits-item {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+.circle {
+  background: #efefef;
+  border-radius: 50%;
+  height: 170px;
+  margin: 0 auto 18px auto;
+  position: relative;
+  width: 170px;
+}
+.circle__inner {
+  background: #fff;
+  border-radius: 50%;
+  height: 112px;
+  left: 29px;
+  position: absolute;
+  top: 29px;
+  width: 112px;
+}
+.circle span {
+  color: #00bff3;
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.pie {
+  display: none;
+  height: 170px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;      
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -moz-transform:rotate(0);
+  -ms-transform:rotate(0);
+  -o-transform:rotate(0);
+  -webkit-transform:rotate(0);
+  transform:rotate(0);
+  width: 85px;
+}
+.pie.big {       
+  height:170px;
+  left:0;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  width:170px;
+}
+.pie:before {
+  border-radius: 85px 0 0 85px;
+  content: "";
+  height: 170px;
+  left: -85px;
+  position: absolute;  
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  width: 85px;
+}
+.pie.big:before {
+  left: 0px;
+}
+.pie.big:after {
+  border-radius: 0 85px 85px 0;
+  content: "";
+  height: 170px;
+  left: 85px;
+  position: absolute;
+  width: 85px;
+}
+.pie.small:before,
+.pie.small:after,
+.pie.big:after,
+.pie.big:before {
+  background-color: #00bff3;  
+}
+.benefits-item h3 {
+	color: #000;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	text-align: center;
+}
+.strains-details__flavors {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 30px 74px 56px 74px;
+}
+.strains-details__flavors h2 {
+	margin: 0 0 38px 0;
+}
+.flavors {
+	text-align: center;
+}
+.flavors__item {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+.flavors__item-icon {
+	background: #efefef;
+	border-radius: 50%;
+	height: 170px;
+	margin: 0 auto 20px auto;
+	position: relative;
+	width: 170px;
+}
+.flavors__item-icon img {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+.flavors__item h3 {
+	color: #000;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+}
+.strains-details__reviews {
+	padding: 28px 27px 43px 27px;
+}
+.strains-details__reviews h2 {
+	margin: 0 0 30px 0;
+}
+.reviews__item {
+	border-bottom: 1px solid #e1e1e1;
+	margin: 0 0 40px 0;
+	padding: 0 0 40px 0;
+}
+.reviews__item-details {
+	margin: 0 0 17px 0;
+}
+.reviews__item-image {
+	float: left;
+	margin: 0 1% 0 0;
+	width: 13%;
+}
+.reviews__item-image img {
+	border: 1px solid #e1e1e1;
+}
+.reviews__item-ratings {
+	color: #898989;
+	float: left;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 1% 0 0;
+	width: 85%;
+}
+.reviews__item-ratings a {
+	font-weight: 700;
+}
+.reviews__item-ratings .dispensaries-listing__item-reviews {
+	margin: 0;
+}
+.reviews__item-date {
+	color: #acacac;
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	width: 100%;
+}
+.reviews__item h3 {
+	color: #000;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0 0 12px 0;
+}
+.reviews__item p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0 0 17px 0;
+}
+.reviews__item-feedback,
+.reviews__item-feedback a {
+	color: #acacac;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	text-align: right;
+}
+a.reviews__link {
+	border: 1px solid #63bb00;
+	border-radius: 4px;
+	color: #63bb00;
+	display: block;
+	font-size: 12px;
+	line-height: 27px;
+	margin: 0 auto;
+	max-width: 132px;
+	min-height: 27px;
+	padding: 0 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+a.reviews__item-thumbs-up {
+	background: url('img/reviews__item-thumbs-up.png') no-repeat left center;
+	margin: 0 12px;
+	padding: 0 0 0 17px;
+}
+a.reviews__item-thumbs-down {
+	background: url('img/reviews__item-thumbs-down.png') no-repeat left center;
+	margin: 0 12px 0 0;
+	padding: 0 0 0 17px;
+}
+.more-popular-strains {
+	padding: 45px 0 0 0;
+}
+h2.more-popular-strains__heading {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 42px 0;
+}
+
+/* Login - Business Owners page */
+.banner--login {
+	background: #000;
+	height: 366px;
+	overflow: hidden;
+	position: relative;
+}
+.banner--login:before {
+	content: ' ';
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	height: 100%;
+	opacity: 0.4;
+	position: absolute;
+	width: 100%;
+}
+.banner--login--business-owners:before {
+	background: url('img/banner--login--business-owners-bg.jpg') center center;
+}
+.banner--login__copy {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+.banner--login h1 {
+	color: #fff;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 7px 0;
+	text-align: center;
+}
+.banner--login p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	text-align: center;
+}
+.heading--login {
+	background: #fff;
+	padding: 54px 0 59px 0;
+}
+.heading--login h2 {
+	color: #0076a3;
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0 0 12px 0;
+	text-align: center;
+}
+.heading--login p {
+	color: #898989;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0;
+	text-align: center;
+}
+.login-steps {
+	margin: 0 0 33px 0;
+}
+.login-steps ol {
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;    
+	counter-reset: li-counter;
+	text-align: left;
+}
+.login-steps ol > li {
+	color: #000;
+	display: inline-block;
+	/* float: left; */
+	font-size: 22px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 50px;
+	position: relative;
+	width: 100%;
+}
+.login-steps ol > li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 38px;
+	height: 38px;
+	 
+	font-size: 22px;
+	line-height: 32px;
+	text-align: center;
+	color: #0076a3;
+
+	border: 2px solid #0076a3;
+	border-radius: 100%;
+	background-color: transparent;
+	content: counter(li-counter);
+	counter-increment: li-counter;
+}
+.login-form {
+	background: #fff;
+	border: 1px solid #d7d7d7;
+	border-radius: 4px;
+	padding: 4% 5% 6% 5%;
+}
+.login-form h2 {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0;
+	text-align: center;
+}
+.login-form form {
+	margin: 23px 0 0 0;
+}
+.login-form__section {
+	margin: 0 0 25px 0;
+}
+.login-form__section h3 {
+	color: #000;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0 0 15px 1%;
+}
+.login-form__section input[type="radio"] {	
+	margin: 0 2px 0 1%;
+	vertical-align: middle;
+	width: auto;
+}
+.login-form__section label {
+	color: #898989;
+	font-size: 12px;
+	line-height: 12px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.login-form__section input[type="text"],
+.login-form__section input[type="password"],
+.login-form__section input[type="email"] {
+	background: #fff;
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #898989;
+	float: left;
+	height: 40px;
+	margin: 0 0 22px 0;
+	width: 100%;
+}
+.login-form input[type="submit"] {
+	background: #63bb00;
+	border: medium none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'Lato';
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 328px;
+	min-height: 49px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.login-form input[type="submit"]:hover {
+	background: #78e300;
+}
+
+/* Login - Cannabis Social page */
+.banner--login--cannabis-social:before {
+	background: url('img/banner--login--cannabis-social-bg.jpg') center center;
+}
+.login-form p {
+	text-align: center;
+}
+.login-form__section--half {
+	width: 100%;
+}
+.login-form__section--half select {
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #898989;
+	float: left;
+	font-size: 12px;
+	height: 28px;	
+	line-height: 12px;
+	margin: 0 2% 10px 0;
+	padding: 0;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.login-form__section--half a {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+}
+.login-form__section--half input[type="radio"] {	
+	margin: 0 2px 0 0;
+}
+.login-form__terms input[type="checkbox"] {
+	float: left;
+	margin: 0 1% 0 0;
+	padding: 0;
+	vertical-align: top;
+	width: 3%;
+}
+.login-form__terms label,
+.login-form__terms input[type="checkbox"]+label {
+	float: left;
+	font-size: 14px;
+	line-height: 22px;
+	margin: -5px 0 0 0;
+	text-transform: none;
+	vertical-align: top;
+	width: 96%;
+}
+.login-form a.login-form__dispensary-signup {
+	background: #63bb00;
+	border: medium none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'Lato';
+	font-size: 18px;
+	line-height: 49px;
+	margin: 18px auto 0 auto;
+	max-width: 328px;
+	min-height: 49px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.login-form  a.login-form__dispensary-signup:hover {
+	background: #78e300;
+}
+
+/* Doctors Listing page */
+.search--doctors-listing {
+	background: url('img/search--doctors-listing-bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+.search--doctors-listing .search__form form {
+	max-width: 590px;
+}
+.search--doctors-listing .search__form form input[type="text"] {
+	padding: 0 188px 0 18px;
+}
+.search__form form select {
+	background-color: #fff;
+	border: medium none;
+	border-left: 1px solid #c2c2c2;
+	color: #000;
+	font-size: 12px;
+	height: 35px;
+	line-height: 12px;
+	position: absolute;
+	right: 56px;
+	text-transform: uppercase;
+	top: 10px;
+	width: 124px;
+}
+
+/* Doctors Details page */
+.heading--doctors-details .heading__image a {
+	background: url('img/heading__image--doctors-details-a-bg.png') no-repeat 18% center #63bb00;
+	margin: 0 auto 29px auto;
+}
+.heading--doctors-details .heading__social-share a {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0;
+	text-indent: -99999px;
+	width: auto;
+}
+.heading--doctors-details .heading__social-share a.heading__social-share--facebook {
+	background: url('img/heading__social-share--facebook.png') no-repeat transparent;
+	width: 8px;
+}
+.heading--doctors-details .heading__social-share a.heading__social-share--google-plus {
+	background: url('img/heading__social-share--google-plus.png') no-repeat transparent;
+	width: 20px;
+}
+.heading--doctors-details .heading__social-share a.heading__social-share--twitter {
+	background: url('img/heading__social-share--twitter.png') no-repeat transparent;
+	width: 16px;
+}
+.heading--doctors-details .heading__social-share a.heading__social-share--linkedin {
+	background: url('img/heading__social-share--linkedin.png') no-repeat transparent;
+	width: 16px;
+}
+.heading--doctors-details .heading__social-share a.heading__social-share--share {
+	background: url('img/heading__social-share--share.png') no-repeat transparent;
+	width: 19px;
+}
+.doctors-details__likes {
+	color: #898989;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0 0 21px 0;
+}
+.doctors-details__likes span {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+}
+.heading__info p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+}
+.heading--doctors-details .dispensaries-listing__item-info-address {
+	margin: 0 0 4px 0;
+}
+.heading--doctors-details .dispensaries-listing__item-info-phone {
+	color: #0076a3;
+	font-size: 22px;
+	line-height: 22px;
+	margin: 0 0 14px 0;
+}
+.heading--doctors-details .dispensaries-listing__item-features {
+	margin: 0 0 25px 0;
+}
+a.doctors-details__set-an-appointment {
+	background: url('img/doctors-details__set-an-appointment-bg.png') no-repeat 21% center transparent;
+	border: 1px solid #63bb00;
+	border-radius: 4px;
+	color: #63bb00;
+	display: block;
+	font-size: 12px;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 0 30px 0;
+	max-width: 265px;
+	padding: 0 0 0 4%;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.doctors-details__main ul.tabs li a {
+	padding: 0 0 0 20px;
+}
+.doctors-details__main ul.tabs li:hover,
+.doctors-details__main ul.tabs li.active {
+	background: url('img/dispensaries-details__main-ul-tabs-li-active-bg.png') no-repeat center bottom transparent !important;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--about {
+	background: url('img/doctors-details__tab--about.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--pricing {
+	background: url('img/doctors-details__tab--pricing.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--reviews {
+	background: url('img/doctors-details__tab--reviews.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--posts {
+	background: url('img/doctors-details__tab--posts.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--videos {
+	background: url('img/doctors-details__tab--videos.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--photos {
+	background: url('img/doctors-details__tab--photos.png') no-repeat left center transparent;
+}
+.doctors-details__main ul.tabs li a.doctors-details__tab--nearby-dispensaries {
+	background: url('img/doctors-details__tab--nearby-dispensaries.png') no-repeat left center transparent;
+}
+.doctors-details__main .dispensaries-listing {
+	padding: 0;
+}
+.doctors-details__main .dispensaries-listing__item {
+	border-top: 1px solid #e1e1e1;
+	margin: 0;
+	padding: 38px 28px 34px 38px;
+}
+.doctors-details__main .dispensaries-listing__item:first-child {
+	border: medium none;
+}
+.dispensaries-details__sidebar-about p {
+	color: #898989;
+	font-size: 14px;
+	line-height: 22px;
+}
+a.doctors-details__sidebar-write-review {
+	background: url('img/doctors-details__sidebar-write-review-bg.png') no-repeat 28% center transparent;
+	border: 1px solid #63bb00;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #63bb00;
+	display: block;
+	font-size: 12px;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 auto;
+	max-width: 265px;
+	padding: 0 0 0 4%;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+	
+
+@media only screen and (min-width : 480px) {
+	/* 480 Dispensaries Listing page */
+	.dispensaries-listing__main-options-display span {
+		float: left;
+		margin: 0 0 0 20px;
+	}
+}
+@media only screen and (min-width : 640px) {
+	/* 640 Dispensaries Details page */
+	.heading__info {
+		margin: 0;
+	}
+	.dispensaries-details__main ul.tabs {
+		padding: 0 14px;
+	}
+	.dispensaries-details__main ul.tabs li a {
+		padding: 13px 18px 11px 18px;
+	}
+	
+	/* 640 Doctors Details page */
+	.doctors-details__main ul.tabs li a {
+		margin: 0 7px;
+		padding: 13px 18px 11px 20px;
+	}
+	
+	/* 640 Strains Details page */
+	.benefits-item {
+		width: 49%;
+	}
+	.flavors__item {
+		width: 49%;
+	}
+}
+@media only screen and (min-width : 768px) {
+	/* 768 News Listing page */
+	.banner__item-caption {
+		background: rgba(0,0,0,0.6);
+		bottom: 0;
+		display: block;
+		padding: 18px 20px 20px 20px;
+		position: absolute;
+	}	
+	.news-listing__nav {
+		margin: 0;
+	}
+	.news-listing__sidebar-social h2 {
+		margin: 0 0 100px 0;
+	}
+	
+	/* 768 News Details page */
+	.news-details__more-related-articles-item {
+		margin: 0;
+	}
+	
+	/* 768 Dispensaries Listing page */
+	.dispensaries-listing__main-options-display {
+		float: left;
+		margin: 0 1% 0 0;
+		width: 70%
+	}
+	.dispensaries-listing__main-options-region {
+		float: left;
+		width: 29%;
+	}
+	.dispensaries-listing__item-image {
+		float: left;
+		margin: 0 5% 0 0;
+		width: 23%;
+	}
+	.dispensaries-listing__item-copy {
+		float: left;
+		width: 72%;
+	}
+	
+	/* 768 Dispensaries Details page */
+	.heading__image a {
+		background-position: 12% center;
+		padding: 0 0 0 12%;
+	}
+	.heading__info {
+		margin: 0;
+	}
+	a.dispensaries-details__sidebar-request-delivery {
+		padding: 0 0 0 12%;
+	}
+	
+	/* 768 Strains page */
+	.strains__main {
+		margin: 0;
+	}
+	.strains__main-options-count {
+		width: 35%;
+	}
+	.strains__main-options-sort {
+		margin: 0 2% 0 0;
+		width: 30%;
+	}
+	.strains__main-options-search {
+		width: 31%;
+	}
+	
+	/* 768 Doctors Details page */
+	.heading--doctors-details .heading__image a {
+		background-image: none;
+		padding: 0;
+	}
+	a.doctors-details__set-an-appointment {
+		background-image: none;
+	}
+	a.doctors-details__sidebar-write-review {
+		padding: 0 0 0 12%;
+	}
+	
+	/* 768 Strains Details page */
+	.benefits-item {
+		margin: 0 0 0 -3px;
+		width: 33.3%;
+	}
+	.flavors__item {
+		margin: 0 0 0 -3px;
+		width: 33.3%;
+	}
+	.reviews__item-image {
+		width: 4%;
+	}
+	.reviews__item-ratings {
+		width: 78%;
+	}
+	.reviews__item-date {
+		width: 16%;
+	}
+}
+@media only screen and (min-width : 992px) {
+	/* 992 News Listing page */
+	.news-listing__item-image {
+		float: left;
+		margin: 0 3% 0 0;
+		width: 48%;
+	}
+	.news-listing__item-copy {
+		float: left;
+		width: 49%;
+	}
+	.news-listing__sidebar-social h2 {
+		margin: 0 0 190px 0;
+	}
+	
+	/* 992 Strains page */
+	.strains__main-options-count {
+		width: 45%;
+	}
+	.strains__main-options-sort {
+		width: 20%;
+	}
+	
+	/* 992 Dispensaries Details page */
+	.heading__image a {
+		background-position: 24% center;
+	}
+	
+	/* 992 Login - Business Owners page */
+	.login-steps ol > li {
+		margin: 0 0 0 40px;
+		width: auto;
+	}
+	.login-steps ol > li:first-child {
+		margin: 0;
+	}
+	.login-form__section input[type="text"],
+	.login-form__section input[type="password"],
+	.login-form__section input[type="email"] {
+		margin: 0 1% 22px 1%;
+		width: 48%;
+	}
+	
+	/* 992 Login - Cannabis Social page */
+	.login-steps ol {
+		text-align: center;
+	}
+	.login-form__section--half {
+		float: left;
+		margin: 0 1% 22px 1%;
+		min-height: 83px;
+		width: 48%;
+	}
+	.login-form__section--half select {
+		margin: 0 2% 0 0;
+	}
+	.login-form__section--half .login-form__birthday-month {
+		width: 35%;
+	}
+	.login-form__section--half .login-form__birthday-day {
+		width: 24%;
+	}
+	.login-form__section--half .login-form__birthday-year {
+		width: 26%;
+	}
+	
+	/* 992 Doctors Details page */
+	.heading--doctors-details .heading__image a {
+		background: url('img/heading__image--doctors-details-a-bg.png') no-repeat 8% center #63bb00;
+		margin: 0 0 29px;
+		padding: 0 0 0 12%;
+	}
+	a.doctors-details__set-an-appointment {
+		background: url('img/doctors-details__set-an-appointment-bg.png') no-repeat 16% center transparent;
+		margin: 0;
+		padding: 0 0 0 26%;
+		text-align: left;
+	}
+}
+@media only screen and (min-width : 1200px) {
+	/* 1200 News Listing page */
+	.news-listing__main {
+		padding-right: 55px;
+	}
+	
+	/* 1200 News Details page */
+	.news-details__social-media a {
+		margin: 0 32px 0 0;
+	}
+	.news-details__social-media-sharethis {
+		float: right;
+	}
+	
+	/* 1200 Dispensaries Listing page */
+	.dispensaries-listing__main {
+		padding-right: 39px;
+	}
+	
+	/* 1200 Dispensaries Details page */
+	.heading__image a {
+		background-position: 31% center;
+		padding: 0 0 0 43%;
+		text-align: left;
+	}
+	.heading__social-media .dispensaries-listing__item-info {
+		margin: 0 0 0 164px;
+	}
+	.dispensaries-details__main {
+		padding-right: 30px;
+	}
+	a.dispensaries-details__sidebar-request-delivery {
+		padding: 0 0 0 34%;
+		text-align: left;
+	}
+	
+	/* 1200 Strains page */
+	.strains__main {
+		padding-right: 39px;
+	}
+	
+	/* 1200 Doctors Details page */
+	.heading--doctors-details .heading__image a {
+		background-position: 18% center;
+		margin: 0 0 29px;
+		padding: 0 0 0 30%;
+	}
+	.heading--doctors-details .heading__social-share a {
+		margin: 0 5px;
+		padding: 0;
+	}
+	.heading--doctors-details .heading__social-media .dispensaries-listing__item-info {
+		margin: 0;
+	}
+	a.doctors-details__set-an-appointment {
+		background-position: 21% center;
+		margin: 0;
+		padding: 0 0 0 29%;
+		text-align: left;
+	}
+	a.doctors-details__sidebar-write-review {
+		padding: 0 0 0 35%;
+		text-align: left;
+	}
+	
+	/* 1200 Strains Details page */
+	.benefits-item {
+		margin: 0 0 0 -3px;
+		width: 20%;
+	}
+	.flavors__item {
+		margin: 0 0 0 -3px;
+		width: 20%;
+	}
+	.reviews__item-image {
+		width: 4%;
+	}
+	.reviews__item-ratings {
+		width: 83%;
+	}
+	.reviews__item-date {
+		width: 11%;
+	}
+}
