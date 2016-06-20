@@ -2,7 +2,7 @@ $(document).foundation();
 $(document).ready(function(){
 	// Show / hide Temporary Menu
 	$('#temporary-menu__link').click(function(){
-		$('#temporary-menu ul').toggleClass('hide');
+		$('#temporary-menu ul').slideToggle();
 	})
 
 	// News Listing page: Banner section
