@@ -545,6 +545,7 @@ a.news-details__social-media--share {
 	margin-bottom: -6px;
 	max-width: 100%;
 	min-height: 100%;
+	width: 100%;
 }
 .search__form {
 	background: rgba(0,0,0,0.5);
