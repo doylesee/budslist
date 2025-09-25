@@ -813,6 +813,7 @@ a.dispensaries-listing__sidebar-change-location {
 	margin-bottom: -6px;
 	max-width: 100%;
 	min-height: 100%;
+	width: 100%;
 }
 .map .scrolloff {
 	pointer-events: none;
